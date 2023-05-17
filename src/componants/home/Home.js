@@ -2,7 +2,7 @@ import MoviList from "../MovieList/MovieList";
 import axios from "axios";
 import Navgbar from "../Navbar/NavBar";
 import { useEffect, useState } from 'react'
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 
 function Home(){
     const [trendData, setTrendData] = useState([]);
@@ -27,23 +27,9 @@ function Home(){
    
     <Navgbar/>
  
-{trendData.map(item=>{
-    return(
-        <Card style={{ width: '18rem' }}>
-        <Card.Body>
-          <Card.Title>{item.title}</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">{item.release_date}</Card.Subtitle>
-          <Card.Text>
-           {item.overview}
-          </Card.Text>
-          {/* <Card.Link href="#">Card Link</Card.Link>
-          <Card.Link href="#">Another Link</Card.Link> */}
-        </Card.Body>
-      </Card>
-    )
-})}
+
 <p>MoviList</p>
-     <MoviList />
+     <MoviList data={trendData}/>
     </>)
 };
 
