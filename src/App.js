@@ -9,7 +9,7 @@ function App() {
   const [trendData, setTrendData] = useState([]);
 
   const getTrending = () => {
-     const serverURL = ;
+     const serverURL = `http://localhost:3001`;
 
 
   axios.get(serverURL)
