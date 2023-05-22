@@ -4,12 +4,12 @@ import Favorit from "./componants/FavList/Favlist"
 import { Routes , Route } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from 'react'
-require('dotenv').config();
+
 function App() {
   const [trendData, setTrendData] = useState([]);
 
   const getTrending = () => {
-     const serverURL = process.env.serverURL;
+     const serverURL = ;
 
 
   axios.get(serverURL)
