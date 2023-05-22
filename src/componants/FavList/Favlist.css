@@ -1,0 +1,24 @@
+.card{
+    width: 18rem  ;
+   margin-left:40% ;
+  
+   font-size:13px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-align: center;
+   
+   
+}
+
+.delet{
+color: red;
+margin:5px;
+}
+
+.update{
+color:green;
+margin:5px;
+}
+
+h1{
+    text-align: center;
+}
