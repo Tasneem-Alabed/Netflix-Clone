@@ -3,13 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Favorit from "./componants/FavList/Favlist"
 import { Routes , Route } from "react-router-dom";
 import axios from "axios";
-
 import { useEffect, useState } from 'react'
+require('dotenv').config();
 function App() {
   const [trendData, setTrendData] = useState([]);
 
   const getTrending = () => {
-     const serverURL = `http://localhost:3001/trending`;
+     const serverURL = process.env.serverURL;
 
 
   axios.get(serverURL)
